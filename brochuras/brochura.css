@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #333;
+    font-family: 'Montserrat'
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+}
+
+.page{
+    width: 803px;
+    height: 1122px;
+    background: white;
+    padding: 3rem;
+    margin-top:31px;
+}
+
+header{
+    text-transform: uppercase;
+    font-size: 2.6em;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: #ed7520;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+header div{
+    display: inline-block;
+}
+
+header h1{
+    font-weight: 400;
+    padding-bottom:10px;
+}
+
+header p{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header img{
+    width: 90px;
+    align-self: flex-start;
+    position: relative;
+    top: -25px;
+}
+
+header::after{
+    content: '';
+    background: #ed7520;
+    width: 35px;
+    height: 10px;
+    position: absolute;
+    left: 8px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.info-inscricoes{
+    font-size: 1.2em;
+    color: #ed7520;
+    margin-top: 70px;
+    display: flex;
+    gap: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    font-weight: 400;
+}
+
+.info-inscricoes :first-child{
+    font-weight: 800;
+}
+
+.info-inscricoes :nth-child(2){
+    padding: 0px 7px;
+    border-left: #ed7520 1px solid;
+    border-right: #ed7520 1px solid;
+}
+
+.card-curso{
+    height: 175px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-curso::after{
+    content: '';
+    height: 175px;
+    width: 901px;
+    background: #ed7520;
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    bottom: 0px;
+}
+
+.card-carga-horaria{
+    margin: 30px 0px;
+    color: #ed7520;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    border: 3px solid #ed7520;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.card-carga-horaria span{
+    font-weight: 700;
+}
+
+.card-valor-datas{
+    display: flex;
+    gap: 55px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+.card-valor-datas div{
+    width: 33%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-valor-datas div:first-child{
+    width: 25%;
+    align-items: center;
+    background: #ed7520;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.card-valor-datas h2{
+    color: #ed7520;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+.imgCurso{
+    width: 901px;
+    height: 416px;
+    position: relative;
+    left: -50px;
+    top: 0px;
+}
+
+.imgCurso img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista-de-datas{
+    margin:50px 0px;
+}
+
+.lista-de-datas ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+    max-height: 110px;
+}
+
+.lista-plano-curricular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-height: 600px
+}
+
+.plano-curricular p{
+    color: #ed7520;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 1px;
+}
+.plano-curricular li{
+    font-size: 0.9em;
+    padding: 2px 0px;
+}
+
+.card-docente{
+    display: flex;
+    gap: 20px;
+}
+
+.card-img-docente{
+    width: 25%;
+    position: relative;
+    
+}
+
+.card-img-docente div:first-child::after{
+    content: "";
+    color: #ed7520;
+    border: #ed7520 0.09cm solid;
+    border-radius: 12px;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 10px;
+    left: 12px;
+}
+
+.card-img-docente img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 11px 11px 8px -7px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 11px 11px 8px -7px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 11px 11px 8px -7px rgba(0, 0, 0, 0.22);
+}
+
+.card-img-docente button{
+    background-color: #ed7520;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    font-family: inherit;
+}
+.info-docente {
+    padding: 0px 40px;
+}
+
+.info-docente h3{
+    font-size: 1.3em;
+    color: #ed7520;
+}
+
+.info-docente span{
+    font-weight: bold;
+}
+
+.info-docente p{
+    font-size: 0.8em;
+    padding: 30px 0px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
